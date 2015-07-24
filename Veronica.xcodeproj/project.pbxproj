@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194C604D1B51DCFA008EFB2E /* sign_up_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C604C1B51DCFA008EFB2E /* sign_up_button.png */; };
+		194C604F1B5610EF008EFB2E /* Veronica_americana.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C604E1B5610EF008EFB2E /* Veronica_americana.png */; };
+		194C60511B589614008EFB2E /* orange_crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C60501B589614008EFB2E /* orange_crown.png */; };
+		194C60531B589FA7008EFB2E /* kindred.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C60521B589FA7008EFB2E /* kindred.png */; };
+		194C60681B58A0D9008EFB2E /* kindred_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C60671B58A0D9008EFB2E /* kindred_text.png */; };
+		194C606A1B59D099008EFB2E /* kindred_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C60691B59D099008EFB2E /* kindred_black.png */; };
+		194C606C1B59D138008EFB2E /* kindred_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C606B1B59D138008EFB2E /* kindred_white.png */; };
+		194C606E1B59D27F008EFB2E /* login_noshadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C606D1B59D27F008EFB2E /* login_noshadow.png */; };
+		194C60701B59D2CC008EFB2E /* orange_crown_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 194C606F1B59D2CC008EFB2E /* orange_crown_white.png */; };
+		194C60731B5DE1AC008EFB2E /* InstagramLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60721B5DE1AC008EFB2E /* InstagramLoginViewController.m */; };
+		194C60761B5DE28E008EFB2E /* KNInstagramService.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60751B5DE28E008EFB2E /* KNInstagramService.m */; };
+		194C60791B5DE46B008EFB2E /* KNStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60781B5DE46A008EFB2E /* KNStorage.m */; };
+		194C60941B5DE499008EFB2E /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C607D1B5DE499008EFB2E /* JSONModel.m */; };
+		194C60951B5DE499008EFB2E /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C607F1B5DE499008EFB2E /* JSONModelArray.m */; };
+		194C60961B5DE499008EFB2E /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60811B5DE499008EFB2E /* JSONModelClassProperty.m */; };
+		194C60971B5DE499008EFB2E /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60831B5DE499008EFB2E /* JSONModelError.m */; };
+		194C60981B5DE499008EFB2E /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60861B5DE499008EFB2E /* NSArray+JSONModel.m */; };
+		194C60991B5DE499008EFB2E /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C608A1B5DE499008EFB2E /* JSONAPI.m */; };
+		194C609A1B5DE499008EFB2E /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C608C1B5DE499008EFB2E /* JSONHTTPClient.m */; };
+		194C609B1B5DE499008EFB2E /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C608E1B5DE499008EFB2E /* JSONModel+networking.m */; };
+		194C609C1B5DE499008EFB2E /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60911B5DE499008EFB2E /* JSONKeyMapper.m */; };
+		194C609D1B5DE499008EFB2E /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60931B5DE499008EFB2E /* JSONValueTransformer.m */; };
+		194C60A41B5DE565008EFB2E /* KNContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60A31B5DE565008EFB2E /* KNContainer.m */; };
+		194C60AA1B5DEAB9008EFB2E /* KNImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60A71B5DEAB9008EFB2E /* KNImageCache.m */; };
+		194C60AB1B5DEAB9008EFB2E /* KNConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60A91B5DEAB9008EFB2E /* KNConfiguration.m */; };
+		194C60B01B5DED24008EFB2E /* KNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60AD1B5DED24008EFB2E /* KNClient.m */; };
+		194C60B11B5DED24008EFB2E /* KNUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60AF1B5DED24008EFB2E /* KNUserService.m */; };
+		194C60B41B61D81A008EFB2E /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60B31B61D81A008EFB2E /* ChallengeViewController.m */; };
 		19B7189E1B519F04003197B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B7189D1B519F04003197B1 /* main.m */; };
 		19B718A11B519F04003197B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B718A01B519F04003197B1 /* AppDelegate.m */; };
 		19B718A41B519F04003197B1 /* Veronica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19B718A21B519F04003197B1 /* Veronica.xcdatamodeld */; };
@@ -15,6 +43,9 @@
 		19B718AC1B519F04003197B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B718AB1B519F04003197B1 /* Images.xcassets */; };
 		19B718AF1B519F04003197B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B718AD1B519F04003197B1 /* LaunchScreen.xib */; };
 		19B718BB1B519F04003197B1 /* VeronicaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B718BA1B519F04003197B1 /* VeronicaTests.m */; };
+		19B718CA1B51A5FB003197B1 /* veronica_clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B718C91B51A5FB003197B1 /* veronica_clean.png */; };
+		19B718CC1B51A782003197B1 /* veronica_clean_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B718CB1B51A782003197B1 /* veronica_clean_blue.png */; };
+		19B718CE1B51A809003197B1 /* veronica_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B718CD1B51A809003197B1 /* veronica_top.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +59,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194C604C1B51DCFA008EFB2E /* sign_up_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sign_up_button.png; path = images/sign_up_button.png; sourceTree = "<group>"; };
+		194C604E1B5610EF008EFB2E /* Veronica_americana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Veronica_americana.png; path = images/Veronica_americana.png; sourceTree = "<group>"; };
+		194C60501B589614008EFB2E /* orange_crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_crown.png; path = images/orange_crown.png; sourceTree = "<group>"; };
+		194C60521B589FA7008EFB2E /* kindred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kindred.png; path = images/kindred.png; sourceTree = "<group>"; };
+		194C60671B58A0D9008EFB2E /* kindred_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kindred_text.png; path = images/kindred_text.png; sourceTree = "<group>"; };
+		194C60691B59D099008EFB2E /* kindred_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kindred_black.png; path = images/kindred_black.png; sourceTree = "<group>"; };
+		194C606B1B59D138008EFB2E /* kindred_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kindred_white.png; path = images/kindred_white.png; sourceTree = "<group>"; };
+		194C606D1B59D27F008EFB2E /* login_noshadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_noshadow.png; path = images/login_noshadow.png; sourceTree = "<group>"; };
+		194C606F1B59D2CC008EFB2E /* orange_crown_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange_crown_white.png; path = images/orange_crown_white.png; sourceTree = "<group>"; };
+		194C60711B5DE1AC008EFB2E /* InstagramLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramLoginViewController.h; sourceTree = "<group>"; };
+		194C60721B5DE1AC008EFB2E /* InstagramLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramLoginViewController.m; sourceTree = "<group>"; };
+		194C60741B5DE28E008EFB2E /* KNInstagramService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNInstagramService.h; sourceTree = "<group>"; };
+		194C60751B5DE28E008EFB2E /* KNInstagramService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNInstagramService.m; sourceTree = "<group>"; };
+		194C60771B5DE46A008EFB2E /* KNStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNStorage.h; sourceTree = "<group>"; };
+		194C60781B5DE46A008EFB2E /* KNStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNStorage.m; sourceTree = "<group>"; };
+		194C607C1B5DE499008EFB2E /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		194C607D1B5DE499008EFB2E /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		194C607E1B5DE499008EFB2E /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		194C607F1B5DE499008EFB2E /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		194C60801B5DE499008EFB2E /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		194C60811B5DE499008EFB2E /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		194C60821B5DE499008EFB2E /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		194C60831B5DE499008EFB2E /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		194C60851B5DE499008EFB2E /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		194C60861B5DE499008EFB2E /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		194C60871B5DE499008EFB2E /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		194C60891B5DE499008EFB2E /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		194C608A1B5DE499008EFB2E /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		194C608B1B5DE499008EFB2E /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		194C608C1B5DE499008EFB2E /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		194C608D1B5DE499008EFB2E /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		194C608E1B5DE499008EFB2E /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		194C60901B5DE499008EFB2E /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		194C60911B5DE499008EFB2E /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		194C60921B5DE499008EFB2E /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		194C60931B5DE499008EFB2E /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		194C60A21B5DE565008EFB2E /* KNContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNContainer.h; sourceTree = "<group>"; };
+		194C60A31B5DE565008EFB2E /* KNContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNContainer.m; sourceTree = "<group>"; };
+		194C60A51B5DEAB9008EFB2E /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		194C60A61B5DEAB9008EFB2E /* KNImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNImageCache.h; sourceTree = "<group>"; };
+		194C60A71B5DEAB9008EFB2E /* KNImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNImageCache.m; sourceTree = "<group>"; };
+		194C60A81B5DEAB9008EFB2E /* KNConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNConfiguration.h; sourceTree = "<group>"; };
+		194C60A91B5DEAB9008EFB2E /* KNConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNConfiguration.m; sourceTree = "<group>"; };
+		194C60AC1B5DED24008EFB2E /* KNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNClient.h; sourceTree = "<group>"; };
+		194C60AD1B5DED24008EFB2E /* KNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNClient.m; sourceTree = "<group>"; };
+		194C60AE1B5DED24008EFB2E /* KNUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNUserService.h; sourceTree = "<group>"; };
+		194C60AF1B5DED24008EFB2E /* KNUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNUserService.m; sourceTree = "<group>"; };
+		194C60B21B61D81A008EFB2E /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
+		194C60B31B61D81A008EFB2E /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
+		194C60B51B61E505008EFB2E /* KNTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNTypes.h; sourceTree = "<group>"; };
 		19B718981B519F04003197B1 /* Veronica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veronica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B7189C1B519F04003197B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B7189D1B519F04003197B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +123,9 @@
 		19B718B41B519F04003197B1 /* VeronicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeronicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B718B91B519F04003197B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B718BA1B519F04003197B1 /* VeronicaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeronicaTests.m; sourceTree = "<group>"; };
+		19B718C91B51A5FB003197B1 /* veronica_clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = veronica_clean.png; path = images/veronica_clean.png; sourceTree = "<group>"; };
+		19B718CB1B51A782003197B1 /* veronica_clean_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = veronica_clean_blue.png; path = images/veronica_clean_blue.png; sourceTree = "<group>"; };
+		19B718CD1B51A809003197B1 /* veronica_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = veronica_top.png; path = images/veronica_top.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +146,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194C607A1B5DE499008EFB2E /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				194C607B1B5DE499008EFB2E /* JSONModel */,
+				194C60841B5DE499008EFB2E /* JSONModelCategories */,
+				194C60871B5DE499008EFB2E /* JSONModelLib.h */,
+				194C60881B5DE499008EFB2E /* JSONModelNetworking */,
+				194C608F1B5DE499008EFB2E /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		194C607B1B5DE499008EFB2E /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				194C607C1B5DE499008EFB2E /* JSONModel.h */,
+				194C607D1B5DE499008EFB2E /* JSONModel.m */,
+				194C607E1B5DE499008EFB2E /* JSONModelArray.h */,
+				194C607F1B5DE499008EFB2E /* JSONModelArray.m */,
+				194C60801B5DE499008EFB2E /* JSONModelClassProperty.h */,
+				194C60811B5DE499008EFB2E /* JSONModelClassProperty.m */,
+				194C60821B5DE499008EFB2E /* JSONModelError.h */,
+				194C60831B5DE499008EFB2E /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		194C60841B5DE499008EFB2E /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				194C60851B5DE499008EFB2E /* NSArray+JSONModel.h */,
+				194C60861B5DE499008EFB2E /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		194C60881B5DE499008EFB2E /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				194C60891B5DE499008EFB2E /* JSONAPI.h */,
+				194C608A1B5DE499008EFB2E /* JSONAPI.m */,
+				194C608B1B5DE499008EFB2E /* JSONHTTPClient.h */,
+				194C608C1B5DE499008EFB2E /* JSONHTTPClient.m */,
+				194C608D1B5DE499008EFB2E /* JSONModel+networking.h */,
+				194C608E1B5DE499008EFB2E /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		194C608F1B5DE499008EFB2E /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				194C60901B5DE499008EFB2E /* JSONKeyMapper.h */,
+				194C60911B5DE499008EFB2E /* JSONKeyMapper.m */,
+				194C60921B5DE499008EFB2E /* JSONValueTransformer.h */,
+				194C60931B5DE499008EFB2E /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		194C609E1B5DE4AD008EFB2E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				194C607A1B5DE499008EFB2E /* JSONModel */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		194C609F1B5DE4BC008EFB2E /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				194C60A51B5DEAB9008EFB2E /* ImageCache.h */,
+				194C60A61B5DEAB9008EFB2E /* KNImageCache.h */,
+				194C60A71B5DEAB9008EFB2E /* KNImageCache.m */,
+				194C60771B5DE46A008EFB2E /* KNStorage.h */,
+				194C60781B5DE46A008EFB2E /* KNStorage.m */,
+			);
+			name = "Data Storage";
+			sourceTree = "<group>";
+		};
+		194C60A01B5DE4D1008EFB2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				194C60AE1B5DED24008EFB2E /* KNUserService.h */,
+				194C60AF1B5DED24008EFB2E /* KNUserService.m */,
+				194C60741B5DE28E008EFB2E /* KNInstagramService.h */,
+				194C60751B5DE28E008EFB2E /* KNInstagramService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		194C60A11B5DE55C008EFB2E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				194C60A21B5DE565008EFB2E /* KNContainer.h */,
+				194C60A31B5DE565008EFB2E /* KNContainer.m */,
+				194C60A81B5DEAB9008EFB2E /* KNConfiguration.h */,
+				194C60A91B5DEAB9008EFB2E /* KNConfiguration.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
 		19B7188F1B519F04003197B1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +269,21 @@
 		19B7189A1B519F04003197B1 /* Veronica */ = {
 			isa = PBXGroup;
 			children = (
+				194C60A11B5DE55C008EFB2E /* Configuration */,
+				194C609E1B5DE4AD008EFB2E /* Packages */,
+				194C60A01B5DE4D1008EFB2E /* Services */,
+				194C609F1B5DE4BC008EFB2E /* Data Storage */,
+				194C60AC1B5DED24008EFB2E /* KNClient.h */,
+				194C60AD1B5DED24008EFB2E /* KNClient.m */,
 				19B7189F1B519F04003197B1 /* AppDelegate.h */,
 				19B718A01B519F04003197B1 /* AppDelegate.m */,
 				19B718A51B519F04003197B1 /* ViewController.h */,
 				19B718A61B519F04003197B1 /* ViewController.m */,
+				194C60711B5DE1AC008EFB2E /* InstagramLoginViewController.h */,
+				194C60721B5DE1AC008EFB2E /* InstagramLoginViewController.m */,
+				194C60B21B61D81A008EFB2E /* ChallengeViewController.h */,
+				194C60B31B61D81A008EFB2E /* ChallengeViewController.m */,
+				194C60B51B61E505008EFB2E /* KNTypes.h */,
 				19B718A81B519F04003197B1 /* Main.storyboard */,
 				19B718AB1B519F04003197B1 /* Images.xcassets */,
 				19B718AD1B519F04003197B1 /* LaunchScreen.xib */,
@@ -99,6 +296,7 @@
 		19B7189B1B519F04003197B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				19B718C41B51A017003197B1 /* images */,
 				19B7189C1B519F04003197B1 /* Info.plist */,
 				19B7189D1B519F04003197B1 /* main.m */,
 			);
@@ -120,6 +318,25 @@
 				19B718B91B519F04003197B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19B718C41B51A017003197B1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				194C606F1B59D2CC008EFB2E /* orange_crown_white.png */,
+				194C606D1B59D27F008EFB2E /* login_noshadow.png */,
+				194C606B1B59D138008EFB2E /* kindred_white.png */,
+				194C60691B59D099008EFB2E /* kindred_black.png */,
+				194C60671B58A0D9008EFB2E /* kindred_text.png */,
+				194C60521B589FA7008EFB2E /* kindred.png */,
+				194C60501B589614008EFB2E /* orange_crown.png */,
+				194C604E1B5610EF008EFB2E /* Veronica_americana.png */,
+				194C604C1B51DCFA008EFB2E /* sign_up_button.png */,
+				19B718CD1B51A809003197B1 /* veronica_top.png */,
+				19B718CB1B51A782003197B1 /* veronica_clean_blue.png */,
+				19B718C91B51A5FB003197B1 /* veronica_clean.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +419,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194C604F1B5610EF008EFB2E /* Veronica_americana.png in Resources */,
+				19B718CC1B51A782003197B1 /* veronica_clean_blue.png in Resources */,
+				194C606C1B59D138008EFB2E /* kindred_white.png in Resources */,
 				19B718AA1B519F04003197B1 /* Main.storyboard in Resources */,
+				194C606E1B59D27F008EFB2E /* login_noshadow.png in Resources */,
+				19B718CA1B51A5FB003197B1 /* veronica_clean.png in Resources */,
+				19B718CE1B51A809003197B1 /* veronica_top.png in Resources */,
+				194C606A1B59D099008EFB2E /* kindred_black.png in Resources */,
+				194C60531B589FA7008EFB2E /* kindred.png in Resources */,
+				194C60701B59D2CC008EFB2E /* orange_crown_white.png in Resources */,
 				19B718AF1B519F04003197B1 /* LaunchScreen.xib in Resources */,
+				194C604D1B51DCFA008EFB2E /* sign_up_button.png in Resources */,
+				194C60511B589614008EFB2E /* orange_crown.png in Resources */,
+				194C60681B58A0D9008EFB2E /* kindred_text.png in Resources */,
 				19B718AC1B519F04003197B1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +451,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194C609D1B5DE499008EFB2E /* JSONValueTransformer.m in Sources */,
+				194C60AB1B5DEAB9008EFB2E /* KNConfiguration.m in Sources */,
+				194C609A1B5DE499008EFB2E /* JSONHTTPClient.m in Sources */,
+				194C60791B5DE46B008EFB2E /* KNStorage.m in Sources */,
+				194C609C1B5DE499008EFB2E /* JSONKeyMapper.m in Sources */,
+				194C60941B5DE499008EFB2E /* JSONModel.m in Sources */,
 				19B718A11B519F04003197B1 /* AppDelegate.m in Sources */,
+				194C60A41B5DE565008EFB2E /* KNContainer.m in Sources */,
+				194C60951B5DE499008EFB2E /* JSONModelArray.m in Sources */,
+				194C60981B5DE499008EFB2E /* NSArray+JSONModel.m in Sources */,
+				194C60731B5DE1AC008EFB2E /* InstagramLoginViewController.m in Sources */,
+				194C609B1B5DE499008EFB2E /* JSONModel+networking.m in Sources */,
+				194C60971B5DE499008EFB2E /* JSONModelError.m in Sources */,
+				194C60991B5DE499008EFB2E /* JSONAPI.m in Sources */,
+				194C60AA1B5DEAB9008EFB2E /* KNImageCache.m in Sources */,
 				19B718A41B519F04003197B1 /* Veronica.xcdatamodeld in Sources */,
+				194C60761B5DE28E008EFB2E /* KNInstagramService.m in Sources */,
+				194C60961B5DE499008EFB2E /* JSONModelClassProperty.m in Sources */,
 				19B718A71B519F04003197B1 /* ViewController.m in Sources */,
 				19B7189E1B519F04003197B1 /* main.m in Sources */,
+				194C60B41B61D81A008EFB2E /* ChallengeViewController.m in Sources */,
+				194C60B01B5DED24008EFB2E /* KNClient.m in Sources */,
+				194C60B11B5DED24008EFB2E /* KNUserService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +598,7 @@
 				INFOPLIST_FILE = Veronica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +609,7 @@
 				INFOPLIST_FILE = Veronica/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +666,7 @@
 				19B718C01B519F04003197B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B718C11B519F04003197B1 /* Build configuration list for PBXNativeTarget "VeronicaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +675,7 @@
 				19B718C31B519F04003197B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
