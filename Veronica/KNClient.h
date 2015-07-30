@@ -7,18 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "JSONModel.h"
 #import "KNStorage.h"
-
-@interface KNChallengeInfo : JSONModel
-
-- (instancetype) initWithChallengeDictionary:(NSDictionary *)dict;
-
-@property (nonatomic) NSString *challenge;
-@property (nonatomic) NSString *date;
-@property (nonatomic) int completion_count;
-
-@end
+#import "KNTypes.h"
+#import "KNInstagramService.h"
 
 @interface KNClient : NSObject
 
@@ -33,6 +26,9 @@
 //- (KNUser *) updateUser:(KNUser *)userInfo;
 
 - (void) getChallengeWithCompletion:(void (^)(KNChallengeInfo *, NSError *)) completionHandler;
+- (void) storePhoto:(UIImage* )photo withCompletion:(void (^)(KNPhotoInfo *, NSError *)) completionHandler;
+- (void) storeUserInfo:(KNInstagramUserInfo* )userInfo withCompletion:(void (^)(KNUserInfo *, NSError *)) completionHandler;
+
 
 @end
 

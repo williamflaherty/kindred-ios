@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "KNClient.h"
 
-@interface ChallengeViewController : UIViewController
+@interface ChallengeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *challengeButton;
-@property (nonatomic) KNClient *kindredClient;
+@property (strong, nonatomic) IBOutlet UIImagePickerController *cameraUI;
 
 @end

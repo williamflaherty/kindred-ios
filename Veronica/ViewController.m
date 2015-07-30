@@ -21,6 +21,14 @@
     UIColor * blueColor = [UIColor colorWithRed:0.212 green:0.69 blue:0.933 alpha:1]; /*#36b0ee*/
     self.view.backgroundColor = blueColor;
     
+    //we should check if we have access to user location here
+    //if we have access:
+    //  we should check that their current location is equal to our cached location
+    //  if it's not, update the cached location
+    //if we don't have access:
+    //ask for access and make the login button say to give us access
+    //we should probably put this in a view will appear ?
+    
 }
 - (IBAction)test:(id)sender {
     NSLog(@"Pressed");

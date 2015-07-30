@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>12AA59A5-CEA3-40F3-850A-0621F1F6FDDF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4961042E86BF97AC9825719DAC23FD20115C17A3</key>
+		<string>https://github.com/williamflaherty/kindred-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Veronica.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4961042E86BF97AC9825719DAC23FD20115C17A3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/williamflaherty/kindred-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4961042E86BF97AC9825719DAC23FD20115C17A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4961042E86BF97AC9825719DAC23FD20115C17A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Veronica</string>
+		</dict>
+	</array>
+</dict>
+</plist>

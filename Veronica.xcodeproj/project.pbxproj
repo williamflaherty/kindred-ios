@@ -35,6 +35,10 @@
 		194C60B01B5DED24008EFB2E /* KNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60AD1B5DED24008EFB2E /* KNClient.m */; };
 		194C60B11B5DED24008EFB2E /* KNUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60AF1B5DED24008EFB2E /* KNUserService.m */; };
 		194C60B41B61D81A008EFB2E /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 194C60B31B61D81A008EFB2E /* ChallengeViewController.m */; };
+		1975796D1B6476BC0035CD6D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1975796C1B6476BC0035CD6D /* MobileCoreServices.framework */; };
+		197579721B648A890035CD6D /* KNTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 197579711B648A890035CD6D /* KNTypes.m */; };
+		197579751B64A7DB0035CD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197579741B64A7DB0035CD6D /* Foundation.framework */; };
+		197579771B64A7E10035CD6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197579761B64A7E10035CD6D /* UIKit.framework */; };
 		19B7189E1B519F04003197B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B7189D1B519F04003197B1 /* main.m */; };
 		19B718A11B519F04003197B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B718A01B519F04003197B1 /* AppDelegate.m */; };
 		19B718A41B519F04003197B1 /* Veronica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19B718A21B519F04003197B1 /* Veronica.xcdatamodeld */; };
@@ -108,7 +112,11 @@
 		194C60AF1B5DED24008EFB2E /* KNUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNUserService.m; sourceTree = "<group>"; };
 		194C60B21B61D81A008EFB2E /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
 		194C60B31B61D81A008EFB2E /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
-		194C60B51B61E505008EFB2E /* KNTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNTypes.h; sourceTree = "<group>"; };
+		1975796C1B6476BC0035CD6D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		197579701B648A890035CD6D /* KNTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KNTypes.h; path = ../KNTypes.h; sourceTree = "<group>"; };
+		197579711B648A890035CD6D /* KNTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KNTypes.m; path = ../KNTypes.m; sourceTree = "<group>"; };
+		197579741B64A7DB0035CD6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		197579761B64A7E10035CD6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19B718981B519F04003197B1 /* Veronica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veronica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B7189C1B519F04003197B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B7189D1B519F04003197B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197579771B64A7E10035CD6D /* UIKit.framework in Frameworks */,
+				197579751B64A7DB0035CD6D /* Foundation.framework in Frameworks */,
+				1975796D1B6476BC0035CD6D /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +259,21 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
+		197579731B648B0F0035CD6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				197579701B648A890035CD6D /* KNTypes.h */,
+				197579711B648A890035CD6D /* KNTypes.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		19B7188F1B519F04003197B1 = {
 			isa = PBXGroup;
 			children = (
+				197579761B64A7E10035CD6D /* UIKit.framework */,
+				197579741B64A7DB0035CD6D /* Foundation.framework */,
+				1975796C1B6476BC0035CD6D /* MobileCoreServices.framework */,
 				19B7189A1B519F04003197B1 /* Veronica */,
 				19B718B71B519F04003197B1 /* VeronicaTests */,
 				19B718991B519F04003197B1 /* Products */,
@@ -269,6 +292,7 @@
 		19B7189A1B519F04003197B1 /* Veronica */ = {
 			isa = PBXGroup;
 			children = (
+				197579731B648B0F0035CD6D /* Models */,
 				194C60A11B5DE55C008EFB2E /* Configuration */,
 				194C609E1B5DE4AD008EFB2E /* Packages */,
 				194C60A01B5DE4D1008EFB2E /* Services */,
@@ -283,7 +307,6 @@
 				194C60721B5DE1AC008EFB2E /* InstagramLoginViewController.m */,
 				194C60B21B61D81A008EFB2E /* ChallengeViewController.h */,
 				194C60B31B61D81A008EFB2E /* ChallengeViewController.m */,
-				194C60B51B61E505008EFB2E /* KNTypes.h */,
 				19B718A81B519F04003197B1 /* Main.storyboard */,
 				19B718AB1B519F04003197B1 /* Images.xcassets */,
 				19B718AD1B519F04003197B1 /* LaunchScreen.xib */,
@@ -469,6 +492,7 @@
 				19B718A41B519F04003197B1 /* Veronica.xcdatamodeld in Sources */,
 				194C60761B5DE28E008EFB2E /* KNInstagramService.m in Sources */,
 				194C60961B5DE499008EFB2E /* JSONModelClassProperty.m in Sources */,
+				197579721B648A890035CD6D /* KNTypes.m in Sources */,
 				19B718A71B519F04003197B1 /* ViewController.m in Sources */,
 				19B7189E1B519F04003197B1 /* main.m in Sources */,
 				194C60B41B61D81A008EFB2E /* ChallengeViewController.m in Sources */,

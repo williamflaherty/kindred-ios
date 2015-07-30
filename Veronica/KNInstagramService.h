@@ -36,7 +36,7 @@
 - (BOOL) tryParseRedirectRequest:(NSURLRequest *)redirectRequest accessGranted:(BOOL *)accessGranted;
 
 // Loads the user's Instagram account info
-- (void) loadUserInfoWithCompletion:(void(^)(KNInstagramUserInfo *userInfo, NSError *error))completion;
+- (void) getInstagramUserInfoWithCompletion:(void(^)(KNInstagramUserInfo *userInfo, NSError *error))completion;
 
 // Loads the user's recent images
 // Passing nil for pageToken will load the first page of images

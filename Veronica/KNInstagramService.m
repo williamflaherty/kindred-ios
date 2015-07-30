@@ -7,10 +7,7 @@
 //
 
 #import "KNInstagramService.h"
-
-static NSString *const AccessTokenKey = @"KN_IG_ACCESS_TOKEN";
-static NSString *const UserIDKey = @"KN_IG_USER_ID";
-static NSString *const UserInfoKey = @"KN_IG_USER_INFO";
+#import "KNConfiguration.h"
 
 @implementation KNInstagramService {
     NSString *_authURL;
@@ -99,7 +96,7 @@ static NSString *const UserInfoKey = @"KN_IG_USER_INFO";
     return nil;
 }
 
-- (void)loadUserInfoWithCompletion:(void (^)(KNInstagramUserInfo *, NSError *))completion {
+- (void)getInstagramUserInfoWithCompletion:(void (^)(KNInstagramUserInfo *, NSError *))completion {
     [self ensureHasAccess];
     
     NSString *url = [NSString stringWithFormat:@"%@%@?access_token=%@", _apiURL, [self userID], [self accessToken]];
@@ -117,17 +114,18 @@ static NSString *const UserInfoKey = @"KN_IG_USER_INFO";
         {
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
             
-            KNInstagramUserInfo *userInfo = [[KNInstagramUserInfo alloc] initWithInstagramDictionary:json[@"data"]];
+            KNInstagramUserInfo *info = [[KNInstagramUserInfo alloc] initWithInstagramDictionary:json[@"data"]];
             
-            [_storage setObject:[userInfo toDictionary] forKey:UserInfoKey];
+            NSLog(@"%@", [info toDictionary]);
+            [_storage setObject:[info toDictionary] forKey:IgUserInfoKey];
             
-            completion(userInfo, nil);
+            completion(info, nil);
         }
         @catch (NSException *exception)
         {
             NSLog(@"Error parsing user info: %@", exception);
             
-            completion(nil, [NSError errorWithDomain:@"com.pearing" code:-1 userInfo:@{@"Message" : @"Unable to parse response"}]);
+            completion(nil, [NSError errorWithDomain:@"com.pearing" code:-1 userInfo:@{@"Message" : @"Unable to parse response from instagram api"}]);
         }
     }];
 }
@@ -166,7 +164,7 @@ static NSString *const UserInfoKey = @"KN_IG_USER_INFO";
 }
 
 - (KNInstagramUserInfo *)userInfo {
-    NSDictionary *dict = [_storage objectForKey:UserInfoKey];
+    NSDictionary *dict = [_storage objectForKey:IgUserInfoKey];
     if (!dict) return nil;
     
     return [[KNInstagramUserInfo alloc] initWithDictionary:dict error:nil];
@@ -196,10 +194,10 @@ static NSString *const UserInfoKey = @"KN_IG_USER_INFO";
 
 - (instancetype) initWithInstagramDictionary:(NSDictionary *)dict {
     self = [super init];
-    
-    for (id key in dict) {
-        NSLog(@"mcshits: key: %@, value: %@ \n", key, [dict objectForKey:key]);
-    }
+
+//    for (id key in dict) {
+//        NSLog(@"mcshits: key: %@, value: %@ \n", key, [dict objectForKey:key]);
+//    }
     
     self.profilePictureURL = dict[@"profile_picture"];
     self.username = dict[@"username"];

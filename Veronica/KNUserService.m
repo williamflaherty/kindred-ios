@@ -10,9 +10,6 @@
 #import "KNUserService.h"
 //#import "PEUser.h"
 
-static NSString *const UserTokenKey = @"KN_USER_TOKEN";
-static NSString *const UserInfoKey = @"KN_USER_INFO";
-
 @implementation KNUserService {
     KNClient *_apiClient;
     KNStorage *_storage;

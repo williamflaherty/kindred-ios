@@ -16,6 +16,7 @@
 
 @implementation InstagramLoginViewController{
     KNInstagramService *_instagramService;
+    KNClient *_kindredClient;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -50,6 +51,7 @@
         self.webView.delegate = nil;
         
         if (permissionGranted) {
+            
             [self transitionToChallenge];
         } else {
             // TODO: show alert message
