@@ -123,7 +123,6 @@
     NSString *BoundaryConstant = @"----------V2ymHFg03ehbqgZCaKO6jy";
     NSString *url = [NSString stringWithFormat:@"%@", KNConfiguration_StorePhotoURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
-    NSMutableDictionary *user = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *photo_dict = [[NSMutableDictionary alloc] init];
     NSDate *currDate = [NSDate date];
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
@@ -139,7 +138,7 @@
     [photo_dict setObject:challengeInfo[@"challengePk"] forKey:@"challenge"];
     [photo_dict setObject:userInfo[@"userPk"] forKey:@"user"];
     [photo_dict setObject:dateString forKey:@"pub_date"];
-    [photo_dict setObject:@"0" forKey:@"updoots"];
+    [photo_dict setObject:@"1" forKey:@"updoots"];
     [photo_dict setObject:@"0" forKey:@"downvotes"];
     [photo_dict setObject:@"0" forKey:@"ig_shared"];
     [photo_dict setObject:@"0" forKey:@"flagged"];
@@ -197,13 +196,18 @@
         @try
         {
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-            KNUserInfo *userInfo = [[KNUserInfo alloc] init];
-            KNChallengeInfo *challengeInfo = [[KNChallengeInfo alloc] init];
-            KNPhotoInfo *photoInfo = [[KNPhotoInfo alloc] initWithPhotoDictionary:json[@"data"] andUserInfo:userInfo andChallengeInfo:challengeInfo];
-            
-            [_storage setObject:[photoInfo toDictionary] forKey:PhotoInfoKey];
-            
-            completionHandler(photoInfo, nil);
+            BOOL valid = [[json objectForKey:@"success"]boolValue];
+            if (valid) {
+                /*this code works but for some reason the debugger shows nothing in the photo info object, no idea wtf apple wtf */
+                KNPhotoInfo *photoInfo = [[KNPhotoInfo alloc] initWithPhotoDictionary:json[@"data"]];
+                
+                [_storage setObject:[photoInfo toDictionary] forKey:PhotoInfoKey];
+                
+                //NSLog(@"%@", [photoInfo toDictionary]);
+                completionHandler(photoInfo, nil);
+            } else{
+                completionHandler(nil, [NSError errorWithDomain:@"com.kindred" code:-1 userInfo:@{@"Message" : @"You're trying to submit two photos in a day. Naughty. Naughty."}]);
+            }
         }
         @catch (NSException *exception)
         {

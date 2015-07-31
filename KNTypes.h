@@ -17,7 +17,7 @@
 @property (nonatomic) NSNumber *challengePk;
 @property (nonatomic) NSString *challenge;
 @property (nonatomic) NSString *date;
-@property (nonatomic) int completionCount;
+@property (nonatomic) NSNumber *completionCount;
 
 @end
 
@@ -34,19 +34,17 @@
 
 @interface KNPhotoInfo : JSONModel
 
-- (instancetype) initWithPhotoDictionary:(NSDictionary *)dict
-                             andUserInfo:(KNUserInfo*)userInfo
-                        andChallengeInfo:(KNChallengeInfo *)challengeInfo;
+- (instancetype) initWithPhotoDictionary:(NSDictionary *)dict;
 
 @property (nonatomic) NSString *url;
-@property (nonatomic) KNChallengeInfo *challenge;
-@property (nonatomic) KNUserInfo *user;
+@property (nonatomic) NSNumber *challenge;
+@property (nonatomic) NSNumber *user;
 @property (nonatomic) NSString *pubDate;
-@property (nonatomic) int updoots;
-@property (nonatomic) int downvotes;
-@property (nonatomic) BOOL igShared;
-@property (nonatomic) BOOL flagged;
+@property (nonatomic) NSNumber *updoots;
+@property (nonatomic) NSNumber *downvotes;
+@property (nonatomic) BOOL      igShared;
+@property (nonatomic) BOOL      flagged;
 @property (nonatomic) NSString *city;
-@property (nonatomic) BOOL top_tf;
+@property (nonatomic) BOOL      top_tf;
 
 @end

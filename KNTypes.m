@@ -16,7 +16,7 @@
     self.challengePk        = dict[@"curr_challenge"][@"id"];
     self.challenge          = dict[@"curr_challenge"][@"challenge"];
     self.date               = dict[@"curr_challenge"][@"pub_date"];
-    self.completionCount    = (int)[dict[@"curr_challenge"][@"completions"] integerValue];
+    self.completionCount    = dict[@"curr_challenge"][@"completions"];
     
     return self;
 }
@@ -41,17 +41,15 @@
 
 @implementation KNPhotoInfo
 
-- (instancetype) initWithPhotoDictionary:(NSDictionary *)dict
-                             andUserInfo:(KNUserInfo*)userInfo
-                        andChallengeInfo:(KNChallengeInfo *)challengeInfo{
+- (instancetype) initWithPhotoDictionary:(NSDictionary *)dict{
     self = [super init];
     
     self.url                = dict[@"photo"][@"url"];
-    self.challenge          = challengeInfo;
-    self.user               = userInfo;
+    self.challenge          = dict[@"photo"][@"challenge"];
+    self.user               = dict[@"photo"][@"user"];
     self.pubDate            = dict[@"photo"][@"pub_date"];
-    self.updoots            = (int)dict[@"photo"][@"updoots"];
-    self.downvotes          = (int)dict[@"photo"][@"downvotes"];
+    self.updoots            = dict[@"photo"][@"updoots"];
+    self.downvotes          = dict[@"photo"][@"downvotes"];
     self.igShared           = (BOOL)dict[@"photo"][@"ig_shared"];
     self.flagged            = (BOOL)dict[@"photo"][@"flagged"];
     self.city               = dict[@"photo"][@"city"];

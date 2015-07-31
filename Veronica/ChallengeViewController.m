@@ -92,11 +92,12 @@
     //INVESTIGATE: http://stackoverflow.com/questions/12355589/uiimagepickercontrolleroriginalimage-vs-original-asset-data
     UIImage *photo = info[@"UIImagePickerControllerOriginalImage"];
     
-    //start a loading screen here?
+    //start a loading screen here and then show the main screen sorted by best
     [_kindredClient storePhoto:photo withCompletion: ^(KNPhotoInfo *retPhoto, NSError *error) {
-        
+        NSLog(@"%@",error.userInfo[@"Message"]);
         
     }];
+    
     
     [picker dismissViewControllerAnimated:YES completion:^(void){
         
